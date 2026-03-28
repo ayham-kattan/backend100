@@ -30,9 +30,16 @@ jobs:
 
       # ✅ Deploy only on main
       - name: Deploy to production
-        if: github.ref == 'refs/heads/main'
         run: |
           cd ~/apps/backend100
           git pull origin main
           npm install
           pm2 restart backend100
+
+
+      - name: Debug Node
+        run: |
+          which node
+          node -v
+          which npm
+          npm config get prefix
