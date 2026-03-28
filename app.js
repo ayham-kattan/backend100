@@ -17,7 +17,6 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
-  
   try {
     const { name } = req.body;
     res.status(200).send('Hello ' + name);
