@@ -6,7 +6,7 @@ describe('Express API Testsssss', () => {
   test('GET / should return Hello Worldsssssssssss', async () => {
     const res = await request(app).get('/');
     expect(res.statusCode).toBe(200);
-    expect(res.text).toBe('Hello World88');
+    expect(res.text).toBe('Hello World');
   });
 
   test('POST / should return Hello + name', async () => {
