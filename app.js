@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
   try {
     res.status(200).send('Hello World22');
   } catch (error) {
-    console.error('Error processing GET  request:', error);
+    console.error(' Error processing GET  request:', error);
     return res.status(500).send('Internal Server Error');
   }
 });
